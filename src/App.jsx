@@ -32,7 +32,7 @@ function App() {
       <section className="pt-6 flex flex-col justify-center items-center overflow-auto z-0"></section>
       <div className="flex flex-row flex-wrap gap-[16px] items-center justify-center px-2 max-w-4xl">
         {pokemons.length > 0 ? (
-          pokemons.map(({ url, name }, index) => (
+          pokemons.map(({ url, name }) => (
             <PokeCard key={url} name={name} url={url} />
           ))
         ) : (
