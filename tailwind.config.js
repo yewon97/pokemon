@@ -1,12 +1,43 @@
 /** @type {import('tailwindcss').Config} */
 export default {
   content: [
-    "./src/**/*.{js,ts,jsx,tsx}",
     "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+    "./components/**/*.{js,ts,jsx,tsx}",
     "./src/styles/main.css",
   ],
+  safelist: [
+    {
+      pattern: /^text-|^bg-/, // You can display all the colors that you need
+    },
+  ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        primary: "#ffcb05",
+        second: "#3d7dca",
+        third: "#003a70",
+        normal: "#A8A77A",
+        fire: "#EE8130",
+        water: "#6390F0",
+        electric: "#dfbc30",
+        grass: "#7AC74C",
+        ice: "#97d4d2",
+        fighting: "#b83e3a",
+        poison: "#A33EA1",
+        ground: "#E2BF65",
+        flying: "#A98FF3",
+        psychic: "#F95587",
+        bug: "#A6B91A",
+        rock: "#B6A136",
+        ghost: "#735797",
+        dragon: "#6F35FC",
+        dark: "#705746",
+        steel: "#B7B7CE",
+        fairy: "#D685AD",
+        none: "#bfbfbf",
+      },
+    },
   },
   plugins: [],
 };
