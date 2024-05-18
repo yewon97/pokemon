@@ -8,7 +8,7 @@ export default {
   ],
   safelist: [
     {
-      pattern: /^text-|^bg-/, // You can display all the colors that you need
+      pattern: /^text-|^bg-|^border-/, // You can display all the colors that you need
     },
   ],
   theme: {
